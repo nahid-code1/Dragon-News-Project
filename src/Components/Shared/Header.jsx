@@ -2,6 +2,7 @@ import React from "react";
 import logo from "@/assets/logo.png";
 import Image from "next/image";
 import { format } from "date-fns";
+import TodayDate from "./TodaysDate";
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
         className="mx-auto md:w-auto w-2xs h-auto"
       ></Image>
       <p className="md:text-lg">Journalism Without Fear or Favour</p>
-      <p className="md:text-xl">{format(new Date(), "EEEE, MMMM dd, yyyy")}</p>
+      <TodayDate></TodayDate>
     </div>
   );
 };
