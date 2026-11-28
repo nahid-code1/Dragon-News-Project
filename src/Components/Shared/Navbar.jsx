@@ -20,8 +20,8 @@ const links = (
 
 const Navbar = () => {
   return (
-    <div className="navbar  container mx-auto">
-      <div className="navbar-start space-y-8">
+    <div className="navbar flex justify-center items-center  container mx-auto mt-2 md:mt-4">
+      <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -42,12 +42,14 @@ const Navbar = () => {
               {""}
             </svg>
           </div>
-          <ul
-            tabIndex={-1}
-            className="menu text-lg menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-          >
-            {links}
-          </ul>
+          <div className=" ">
+            <ul
+              tabIndex={-1}
+              className="menu text-lg menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-gray-600 "
+            >
+              {links}
+            </ul>
+          </div>
         </div>
         <div className=""></div>
       </div>
